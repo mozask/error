@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.1, minimum-scale=0.90">
+<title>mozask</title>
+</head>
+<body style="background:#010210;">
+<style>
+*{
+  margin:0;
+  padding:0;
+ -webkit-touch-callout: none;     -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;user-select: none; 
+font-family: 'Roboto', sans-serif;
+
+}
+
+::placeholder{
+color:#1c1c1c;
+text-align: right;
+}
+a{
+color:#0060df;
+text-decoration:none;
+
+
+}
+.dib.input:focus {
+border-color:#38006d;
+}
+.dropbtn {
+  background: #f9f9f9;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color:#222;
+  
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:focus {
+  background-color: #;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 60%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin:0;
+  border-radius:2px;
+  height:350px;
+ margin-top:-40px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+  -webkit-touch-callout: none;     -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;user-select: none; 
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.a{
+outline: none;
+text-decoration: none;
+
+}
+a:focus {
+  border-bottom: 1px solid #fff;
+ 
+}
+input:focus{
+font-family: 'Roboto', sans-serif;
+font-size:13px;
+
+}
+</style>
+
+<div class="dib" style="text-align: right; margin-top:-px;">
+<input class="input"  type="text" id="mySearch" onkeyup="myFunction()" placeholder="جست و جو یا ورود ادرس" title="Type in a category" style="width:84%;
+outline:0;
+ background:#d7d7db;
+ border-radius:6px;
+ color:#000;
+  border:2px solid #003eaa; padding:11px 20px; text-align:right; margin:10px; 
+  font-size:13px;
+  " Lang="fa-IR">
+</div>
+<br>
+
+
+
+<hr style="background:#d7d7db; width:99%;">
+<br>
+
+<div style="text-align: right;">
+<br>
+<h2  style="text-align:right; color:#fafafa;">Mozask</h2>
+</div>
+<br><br>
+<ul id="myMenu" >
+<li style="display: none; text-align: left;‌ color:#fafafa;"><a href="https://www.wikipedia.org/">wikipedia</a>
+ <br>
+ Wikipedia is a free online encyclopedia, 
+ <br>
+ created and edited by volunteers around 
+ <br>
+ the world and hosted by the WikimediaFoundation
+ <br>
+ </li>
+  <li style="display:none; text-align: left; color:#fafafa;"><a  href="https://android.com">Android - android.com</a>
+  <br>
+  
+  Find the latest and greatest on <br>the world's most powerful mobile platform. <br>Browse devices, explore resources and <br>learn about the latest updates
+  </li>
+
+  <li style="display: none; text-align: right; color:#fafafa;"><a href=""></a></li>
+  
+  <li style="display: none; text-align: right;‌ color:#fafafa;"><a href="#">دی جی کالا -Digikala
+  
+  </a>
+  <br>
+  هر آنچه که نیاز دارید با بهترین قیمت از دیجی‌کالا بخرید! جدیدترین انواع
+  <br>
+  گوشی موبایل، لپ تاپ، لباس، لوازم آرایشی و بهداشتی، کتاب، لوازم خانگی
+  <br>
+  خودرو و
+  </li>
+ 
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+ 
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+ 
+ <li style="display: none; text-align: left; color:#fafafa;"><a href="https://bing.com" class="a">bing</a>
+  <br>
+  Bing helps you turn information into <br>action, making it faster and easier to <br> go from searching to doing
+  </li>
+  
+ 
+  <li style="display: none; text-align: right; color:#fafafa;" ><a href="#">موتور جستجو - mozask</a>
+  <br>
+  موتور جستجوی جدید و سریع و با قدرت
+  </li>
+ 
+  <li style="display: none; text-align: right; margin-top:10px; color:#fafafa;"><a href="https://google.com">موتور جستجو - google - گوگل</a>
+  <br>
+  Account Options. ورود · تنظیمات جستجو · تاریخچه ی شبکه. Google
+  <br>
+  جستجوی پیشرفته · ‫همه چیز درباره Google ‏Google.com in English. ©
+  <br>
+  
+  2021 
+  </li>
+ 
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%D8%AF%D8%B1%D8%AE%D8%AA">درخت - ویکی‌پدیا، دانشنامهٔ آزاد</a>
+  <br>
+  در برخی از تعریف‌ها از کاربردهای درخت از جمله این
+  <br>
+  است که تنها گیاه چوبی است. تنها گیاهی است که از 
+  <br>
+  آن چوب به دست می‌آورند. نمی‌شود بلندای درختان را
+  <br>
+  دقیق مشخص کرد 
+  </li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%DA%A9%D9%88%D9%87">کوه - ویکی‌پدیا، دانشنامهٔ آزاد</a>
+  <br>
+  عموماً به ارتفاعات بلندتر از ۶۰۰ متر نسبت به زمین‌های
+  <br>
+  اطراف آن کوه می‌گویند. کوهها بر اثر زمین‌ساخت
+  <br>
+  صفحه‌ای یا آتشفشان‌خیزی تشکیل می‌شوند این
+  <br>
+  نیروها می‌توانند
+  </li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%DA%A9%D9%87%DA%A9%D8%B4%D8%A7%D9%86">کهکشان - ویکی‌پدیا، دانشنامهٔ آزاد</a>
+  <br>
+  کهکشان‌ها از دید بزرگی و شمار ستاره‌ها دارای طیف
+  <br>
+  گسترده‌ای هستند، کهکشان‌های کوتوله نزدیک ۱۰ میلیون
+  <br>
+  ستاره و کهکشان‌های غول آسا تا سقف ۱۰۰ تریلیون ستاره دارند
+  </li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B1%D8%A7%D9%87_%D8%B4%DB%8C%D8%B1%DB%8C">راه شیری - ویکی‌پدیا، دانشنامهٔ آزاد</a>
+  <br>
+  
+  ۸ جریان ذرات در مرکز کهکشان — راه شیری کهکشانی 
+  <br>
+  مارپیچی میله‌ای است. شکل کلی کهکشان‌های
+  <br>
+  مارپیچی را می‌توان به یک دیسک یا قرص ت
+  </li>
+  
+  <li style="display: none; text-align: right; margin-top:10px; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B1%D8%A7%D9%87_%D8%B4%DB%8C%D8%B1%DB%8C">کهکشان راه شیری - ویکی پدیا دانشنامه آزاد</a>
+  
+  <br>
+  
+  ۸ جریان ذرات در مرکز کهکشان — راه شیری کهکشانی 
+  <br>
+  مارپیچی میله‌ای است. شکل کلی کهکشان‌های
+  <br>
+  مارپیچی را می‌توان به یک دیسک یا قرص ت
+  </li>
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="#"></a></li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://bing.com">موتور جستجو - bing</a>
+  <br>
+  Bing helps you turn information into <br>action, making it faster and easier to <br> go from searching to doing
+  </li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">ویکاپدیا</a></li>
+  
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.digikala.com/search/category-mobile-phone/">خرید گوشی‌ دی جی کالا</a></li>
+  
+  <li style="display: none; text-align: right;‌ color:#fafafa;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B3%DB%8C%D8%A7%D9%87%E2%80%8C%DA%86%D8%A7%D9%84%D9%87">سیاه چاله - ویکاپدیا دانش نامه آزاد</a>
+  <br>
+  مرز این ناحیه از فضازمان که هیچ چیزی پس از عبور از آن نمی‌تواند به بیرون برگردد را افق رویداد می‌نامند. صفت «سیاه» در نام سیاه‌چاله برگرفته از این واقعیت است که ...
+  </li>
+  
+  <li style="display: none; text-align: left; color:#fafafa;"><a href="https://www.notebookcheck.net/MIUI-13-official-launch-date-and-time-confirmed-along-with-claims-of-big-app-improvements-over-MIUI-12-5-Enhanced-Edition.588864.0.html">MIUI 13 official launch date and time confirmed along with claims of big</a>
+
+<br>
+Xiaomi has confirmed the launch date 
+<br>
+and time for its latest mobile operating 
+<br>
+system overlay, MIUI 13. As previously 
+<br>
+expected, the skin will
+  </li>
+  
+  
+  
+  <li style="display: none; text-align: left; margin-top:10px;‌‌ color:#fafafa;"><a href="">
+  MIUI 13 presentation date officially confirmed - Gizchina.com
+  </a>
+  <br>
+   According to the information that has previously surfaced on the net, MIUI 13 will offer customizable notification management, virtual
+ 
+  
+  </li>
+ 
+  
+ 
+  <li style="display: none; text-align: left; color:#fafafa;"><a href="https://en.miui.com/">MIUI 12</a>
+ <br>
+  MIUI is our very own user interface<br> based on Android that is loved by millions <br>worldwide. It is one of the most popular<br> custom ROMs for Android lover due to
+  </li>
+  <br>
+  <li style="display: none; text-align: left;‌ color:#fafafa;"><a href="https://en.m.wikipedia.org/wiki/MIUI">MIUI 12 - Wikipedia</a>
+  <br>
+  MIUI (pronunciation: Me You I) is 
+  <br>
+  a  modified Android ROM developed by 
+  <br>
+  electronics manufacturer Xiaomi 
+  </li>
+  
+  <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.zoomit.ir/os/377265-xiaomi-miui-13-features-changes/">قابلیت های می یوای ۱۳ منتشر شد</a>
+  <br>
+ رابط کاربری می یوای شیامی ۱۴۰۰ 
+ <br>
+ قابلیت نمایش زمان روشن‌ ماندن نمایشگر
+ <br>
+ سوپر والپیپرها  مستندات و برخی قابلیت‌های دیگر
+ </li>
+ 
+ <li style="display: none; text-align: right; color:#fafafa;"‌><a href="https://www.aparat.com/v/bqUYH/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">باب اسفنجی</a>
+ <br>
+ انیمیشن باب اسفنجی-باب اسفنجی-کارتون باب
+ <br>
+اسفنجی با دوبله فارسی
+ <br>
+<br>
+ </li>
+ <li style="display: none; text-align: left; color:#fafafa;"><a href="https://www.aparat.com/v/bqUYH/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">Sponge Bob 26</a>
+ <br>
+aparat
+ <br>
+ 
+ <br>
+ 
+ </li>
+ 
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://upmusics.com/tag/%D9%85%D8%AD%D8%B3%D9%86-%DA%86%D8%A7%D9%88%D8%B4%DB%8C/">دانلود آهنگ محسن چاوشی</a>
+ <br>
+ دانلود آهنگ محسن چاوشی باب دلمی. شما آپ موزیکی ها میتوانید دانلود کنید و
+ <br>
+ لذت ببرید از آهنگ باب دلمی با صدای محسن چاوشی
+ <br>
+ 
+ </li>
+ 
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://ipemdad.com/our-services/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DB%8C%D8%AE%DA%86%D8%A7%D9%84/">ipemdad -تعمیرات یخچال</a>
+ <br>
+تعمیر یخچال در شرق ، غرب ، شمال و جنوب تهران
+ <br>
+توسط خدمات نمایندگی تعمیرات و تعمیرگاه مجاز
+ <br>
+ یخچال ، فریزر آی.پی امداد در محل عیب یابی و رفع
+ <br>
+ عیب میگردد
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://afrazservice.ir/">افراز سرویس</a>
+ <br>
+ تعمیر یخچال : افراز سرویس مرکز تخصصی تعمیر انواع یخچال فریزر و ساید
+ <br>
+ بای ساید در تهران در محل شما + 1 سال گارانتی
+ <br>
+
+ <br>
+
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/EoXdp/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_5_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">انیمیشن عصر یخبندان 5 دوبله فارسی</a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/mbfNF/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_%DB%B4_%3A_%D8%B1%D8%A7%D9%86%D8%B4_%D9%82%D8%A7%D8%B1%D9%87_%D8%A7%DB%8C_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87">انیمیشن عصر یخبندان ۴ : رانش قاره ای - دوبله فارسی</a>
+ 
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/lbC7H/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%AE%D8%A7%D9%86%D9%87_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Home_2015">انیمیشن خانه با دوبله فارسی </a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/lbC7H/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%AE%D8%A7%D9%86%D9%87_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Home_2015">انیمیشن خانه با دوبله فارسی </a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/R73nk/%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_3_Full_HD_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_-_Ice_Age">عصر یخبندان 3 Full HD دوبله فارسی - Ice Age 3:</a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/u6eYa/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%862_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Ice_Age%3A_The">انیمیشن عصر یخبندان2 - دوبله فارسی | Ice Age: The Meltdown</a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/fI9GF/%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_1_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Ice_Age">کارتون عصر یخبندان 1 - دوبله فارسی | Ice Age</a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: left; color:#fafafa;"><a href="https://www.instagram.com/">Instagram</a>
+ <br>
+ 
+ Create an account or log in to Instagram - A simple, fun & 
+ <br>
+ creative way to capture, edit & share photos, videos 
+ <br>
+ messages with friends & family
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.instagram.com/">اینستاگرام</a>
+ <br>
+ 
+ Create an account or log in to Instagram - A simple, fun & 
+ <br>
+ creative way to capture, edit & share photos, videos 
+ <br>
+ messages with friends & family
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: right; color:#fafafa;"><a href="https://www.aparat.com/v/ZvDmw/26-%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C">انیمیشن باب اسفنجی - کارتون باب اسفنجی - باب اسفنجی جدید با دوبله فارسی</a>
+ <br>
+ آپارات
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+ <li style="display: none; text-align: left; color:#fafafa;"><a href="https://www.aparat.com/v/ZvDmw/26-%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C">Sponge Bob 59</a>
+ <br>
+ aparat
+ <br>
+ 
+ <br>
+ 
+ <br>
+ 
+ </li>
+</ul>
+
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+     
+    }
+  }
+}
+
+
+
+</script>
+
+
+</body>
+</html>
