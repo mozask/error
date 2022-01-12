@@ -83,6 +83,6 @@ text-decoration: none;
 input:focus{
 font-family: 'Roboto', sans-serif;
 font-size:13px;
-transition:0.33s;
+transition:0.0s;
 
 }
