@@ -89,3 +89,7 @@ transition:0.0s;
 ul{
 list-style-image: url('');
 }
+a:focus {
+  border-bottom: 1px solid #fff;
+ 
+}
