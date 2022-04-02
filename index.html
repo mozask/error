@@ -14,22 +14,89 @@
 <title>mozask</title>
 </head>
 <body style="background:#fff;">
+<div style="text-align: right;">
+  <style>
+    .dropbtn {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 0, 0);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius:5px;
+  margin-right: 150px;
 
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(223, 223, 223);
+  
+}
 
-<div class="dib" style="text-align: left; margin-top:-px; ">
-<input class="input"  type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search" title="Type in a category" style="
-width:70%;
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 200px;
+ margin-left: -90px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+  </style>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+  </button>
+    <div id="myDropdown" class="dropdown-content">
+      
+    </div>
+  </div> 
+</div>
+
+<div class="dib" style="text-align: center; margin-top:-px;  margin-right: 909px;">
+  <svg style="margin-top: -94px; background:rgb(245, 245, 245); height: 33px;  margin-right: 3px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+  </svg>
+<input class="input"  type="search" id="mySearch" onkeyup="my()" placeholder="Search" title="Type in a category" style="
+width:66%;
+
 outline:0;
- background:#eee;
- border-radius:3px;
+ background:rgb(245, 245, 245);
+ border-radbius:9px;
 font-size:12px;
  color:#000;
-  border:none;   padding:11px 20px; text-align:left; margin:10px; 
+  border:none;   padding:11px 20px; text-align:left;
   position: fixed;
+  margin-top: -50px;
+  height: 33px;
+ 
   " Lang="fa-IR">
 
   
- 
+</input>
 </div>
 <div class="min">
 <br>
@@ -49,7 +116,7 @@ font-size:12px;
 <div id="menue">
 <br>
 <center>
- 0.3
+ 0.4
  
 
 
@@ -444,7 +511,7 @@ aparat
             <br>
             
             </li>
-            <li style="display: none; text-align: left;"><a href="https://divar.ir/">فیس‌بوک - ورود به سیستم یا نام‌نویسی</a>
+            <li style="display: none; text-align: left;"><a href="https://fa-ir.facebook.com">فیس‌بوک - ورود به سیستم یا نام‌نویسی</a>
                 <br>
                 یک حساب ایجاد کنید یا به سیستم فیس‌بوک وارد شوید. به دوستان، خانواده‌تان وسایر افرادی که می‌شناسید متصل شوید. عکس‌ و ویدیو 
                 <br>
@@ -454,13 +521,44 @@ aparat
                 <br>
                 
                 </li>
+                <li style="display: none; text-align: left;"><a href="https://nobelcold.github.io/">تعمیرات یخچال در اندیمشک</a>
+                  <br>
+                 تعمیرات یخچال در اندیمشک 
+                  <br>
+                بهترین تعمیر کننده های اندیمشک
+                  <br>
+                  
+                  <br>
+                  
+                  </li>
+                  <li style="display: none; text-align: left;"><a href="https://nobelcold.github.io/">تعمیرات یخچال در اندیمشک کوه لور</a>
+                    <br>
+                   تعمیرات یخچال در اندیمشک 
+                    <br>
+                  بهترین تعمیر کننده های اندیمشک
+                    <br>
+                    
+                    <br>
+                    
+                    </li>
+                    <li style="display: none; text-align: left;"><a href="https://getbootstrap.com/">getbootstrap</a>
+                   
+                   
+                      <br>
+                      The world's most popular mobile-first and responsive front-end ...
+                      <br>
+                      Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive
+                      <br>
+                      mobile first projects on the web. Download Bootstrap. Currently v3.3.7
+                      <br>
+                      
+                      </li>
 </ul>
 
 
 </div>
 <script src="index.js"></script>
-<script>
+<script src="app.js"></script>
 
-</script>
 </body>
 </html>
