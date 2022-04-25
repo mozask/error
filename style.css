@@ -1,8 +1,8 @@
-{
+*{
     margin:0;
     padding:0;
    
-  font-family: 'Roboto', sans-serif;
+  
   
   }
   
@@ -11,7 +11,7 @@
   text-align: left;
   }
   a{
-  color:#6770c5;
+  color:#3700ff9f;
   text-decoration:none;
   cursor:pointer;
   font-size: 18px;
@@ -79,12 +79,7 @@
     
    
   }
-  input:focus{
  
-  font-size:10px;
-  
-  
-  }
   ul{
   list-style-image: url('');
   }
@@ -100,3 +95,4 @@
     -webkit-touch-callout: none;     -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;user-select: none; 
   }
 
+  
