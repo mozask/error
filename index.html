@@ -198,6 +198,36 @@ padding:0;
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.topna {
+  background-color: #f1f1f1;
+  overflow: hidden;
+  position: fixed;
+  width:100%;
+}
+
+/* Style the links inside the navigation bar */
+.topna a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topna a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topna a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
   </style>
 
 
@@ -208,7 +238,26 @@ padding:0;
 <br> 
 <br>
 
+<div class="topna">
+<div id="mySidenav" class="sidenav">
+<!-- Use any element to open the sidenav -->
 
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+</svg>
+
+</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+<span onclick="openNav()" style="text-align: right;">
+open
+</span>
+</div>
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 
@@ -244,29 +293,13 @@ padding:0;
   </datalist>
 </input>
 
-<div id="mySidenav" class="sidenav">
-<!-- Use any element to open the sidenav -->
 
-
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-</svg>
-
-</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
 </div>
 <div class="min">
 <br>
 
 
-<span onclick="openNav()">
-####
-</span>
+
 
 <hr style="background: rgb(0, 0, 0); color: rgb(0, 0, 0);">
 <br>
