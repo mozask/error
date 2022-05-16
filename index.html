@@ -1,940 +1,118 @@
-<!DOCTYPE html>
-<html>
-<head>
-<!-- CSS only -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.1, minimum-scale=0.90">
-<title>mozask</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body style="background:#fff; font-family: 'Bebas Neue', cursive;">
-
-<div style="text-align: right;">
-  <style>
-    .dropbtn {
-  background-color: rgb(241, 241, 241);
-  color: rgb(0, 0, 0);
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius:5px;
-  margin-right: 150px;
-
-}
-.dropbtn:hover, .dropbtn:focus {
-  background-color: rgb(223, 223, 223);
-  
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-}
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fafafa;
-  min-width: 200px;
- margin-left: -90px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: rgb(0, 0, 0);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 15px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block; transition:1s;}
-*{
-margin:0;
-padding:0;
-
-}
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #f1f1f1;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
- margin-top: 42vh;
- box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #;
-  color: #000;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-.settings{
-  
-}
-/* The side navigation menu */
-.sidenav {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  height: 50%; /* 100% Full-height */
-  width: 0px; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #f1f1f1; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #111;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .2s;
-  padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-.topna {
-  background-color: #f1f1f1;
-  overflow: hidden;
-  position: fixed;
-  width:100%;
-  margin-top:-50px;
-}
-
-/* Style the links inside the navigation bar */
-.topna a {
-;
-}
-
-/* Change the color of links on hover */
-.topna a:hover {
-
-}
-
-/* Add a color to the active/current link */
-.topna a.active {
- 
- 
-}
-
-
-  </style>
-
-
-  </div> 
-</div>
-
-
-<br> 
-<br>
-
-<div class="topna">
-<div id="mySidenav" class="sidenav">
-<!-- Use any element to open the sidenav -->
-
-
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
-</svg>
-
-</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
-<span onclick="openNav()" style="text-align: right;">
-open
-</span>
-</div>
-
-<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-
-
-<div class="dib" style="text-align: center;">
-
-  <input class="input" 
-   type="url" id="mySearch" onkeyup="my()" placeholder="Search" title="Type in a category" style="
-  width:66%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  outline:0;
-   background:rgb(255, 255, 255);
-   border-radbius:9px;
-  font-size:12px;
-   color:#000;
-    border: 1px solid #000;  
-   padding:11px 20px;
-   text-align:left;
-
-    margin-top: -50px;
-    height: 33px;
-   
-    " Lang="fa-IR" list="defaultURLs" >
-  <datalist id="defaultURLs">
-  
-      <option value="دیوار" label="دیوار">
-      <option value="درخت" label="درخت">
-      <option value="کوه" label="کوه">
-        <option value="bing" label="Bing">
-       <option value="google" label="google">
-        
-          
-  </datalist>
-</input>
-
-
-</div>
-<div class="min">
-<br>
-
-
-
-
-<hr style="background: rgb(0, 0, 0); color: rgb(0, 0, 0);">
-<br>
-
-<div style="text-align: right;">
-
-
-
-</div>
-<div id="menue">
-<br>
-<center>
-
- 
-
-
-
-
-
-</center>
-</div>
-
-<br><br>
-<ul id="myMenu" style="list-style-type:none;">
-  <li style="display: none; text-align: left;"><a href="http://mozask.github.io/support">mozask support</a>
-                   
-                   
-                      <br>
-                      
-                      <br>
-                    
-                      <br>
-                  
-                      <br>
-                      
-                      </li>
-  <li style="display: none; text-align: left;"><a href="http://mozask.github.io/support/mozask">چگونه موزاسک را در صفحه خود بیاریم</a>
-                   
-                   
-                      <br>
-                      
-                      <br>
-                    
-                      <br>
-                  
-                      <br>
-                      
-                      </li>
-
-<li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/xNKky/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C__%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C__%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C">انیمیشن باب اسفنجی دوبله فارسی _کارتون باب اسفنجی _باب اسفنجی</a>
-<br>
-aparat
-<br>
-
-<br>
-
-<br>
-
-</li>
-<li style="display: none; text-align: left;"><a href="https://www.wikipedia.org/">wikipedia</a>
- <br>
- Wikipedia is a free online encyclopedia, 
- <br>
- created and edited by volunteers around 
- <br>
- the world and hosted by the WikimediaFoundation
- <br>
- </li>
-  <li style="display:none; text-align: left;"><a  href="https://android.com">Android - android.com</a>
-  <br>
-  
-  Find the latest and greatest on <br>the world's most powerful mobile platform. <br>Browse devices, explore resources and <br>learn about the latest updates
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mozask</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="#">M</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+  <a class="nav-link active" aria-current="page" href="https://mozask.github.io/search/">mozask</a>
   </li>
-
-  <li style="display: none; text-align: right;"><a href=""></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="https://www.digikala.com/">دی جی کالا -Digikala
-  
+  <li class="nav-item">
+  <a class="nav-link" href="#">فارسی</a>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+  Language
   </a>
-  <br>
-  هر آنچه که نیاز دارید با بهترین قیمت از دیجی‌کالا بخرید! جدیدترین انواع
-  <br>
-  گوشی موبایل، لپ تاپ، لباس، لوازم آرایشی و بهداشتی، کتاب، لوازم خانگی
-  <br>
-  خودرو و
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li><a class="dropdown-item" href="#">English</a></li>
+  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+ <li><a class="dropdown-item" href="#">中国語</a></li>
+ <li><a class="dropdown-item" href="#">日本</a></li>
+ 
+  </ul>
   </li>
- 
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
- 
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
- 
- <li style="display: none; text-align: left;"><a href="https://bing.com">bing</a>
-  <br>
-  Bing helps you turn information into <br>action, making it faster and easier to <br> go from searching to doing
+  <li class="nav-item">
+  <a class="nav-link disabled">mlc : 0.5.2.0</a>
   </li>
+  </ul>
+  <form class="d-flex" role="search">
   
- 
-  <li style="display: none; text-align: right;"><a href="#">موتور جستجو - mozask</a>
-  <br>
-  موتور جستجوی جدید و سریع و با قدرت
-  </li>
- 
-  <li style="display: none; text-align: right; margin-top:10px;"><a href="https://google.com">موتور جستجو - google - گوگل</a>
-  <br>
-  Account Options. ورود · تنظیمات جستجو · تاریخچه ی شبکه. Google
-
-  <br>
-
-  جستجوی پیشرفته · ‫همه چیز درباره Google ‏Google.com in English. ©
-  <br>
+  </form>
+  </div>
+  </div>
+  </nav>
   
-  2022
-  </li>
- 
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%D8%AF%D8%B1%D8%AE%D8%AA">درخت - ویکی‌پدیا، دانشنامهٔ آزاد</a>
-  <br>
-  در برخی از تعریف‌ها از کاربردهای درخت از جمله این
-  <br>
-  است که تنها گیاه چوبی است. تنها گیاهی است که از 
-  <br>
-  آن چوب به دست می‌آورند. نمی‌شود بلندای درختان را
-  <br>
-  دقیق مشخص کرد 
-  </li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%DA%A9%D9%88%D9%87">کوه - ویکی‌پدیا، دانشنامهٔ آزاد</a>
-  <br>
-  عموماً به ارتفاعات بلندتر از ۶۰۰ متر نسبت به زمین‌های
-  <br>
-  اطراف آن کوه می‌گویند. کوهها بر اثر زمین‌ساخت
-  <br>
-  صفحه‌ای یا آتشفشان‌خیزی تشکیل می‌شوند این
-  <br>
-  نیروها می‌توانند
-  </li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%DA%A9%D9%87%DA%A9%D8%B4%D8%A7%D9%86">کهکشان - ویکی‌پدیا، دانشنامهٔ آزاد</a>
-  <br>
-  کهکشان‌ها از دید بزرگی و شمار ستاره‌ها دارای طیف
-  <br>
-  گسترده‌ای هستند، کهکشان‌های کوتوله نزدیک ۱۰ میلیون
-  <br>
-  ستاره و کهکشان‌های غول آسا تا سقف ۱۰۰ تریلیون ستاره دارند
-  </li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B1%D8%A7%D9%87_%D8%B4%DB%8C%D8%B1%DB%8C">راه شیری - ویکی‌پدیا، دانشنامهٔ آزاد</a>
-  <br>
-  
-  ۸ جریان ذرات در مرکز کهکشان — راه شیری کهکشانی 
-  <br>
-  مارپیچی میله‌ای است. شکل کلی کهکشان‌های
-  <br>
-  مارپیچی را می‌توان به یک دیسک یا قرص ت
-  </li>
-  
-  <li style="display: none; text-align: right; margin-top:10px;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B1%D8%A7%D9%87_%D8%B4%DB%8C%D8%B1%DB%8C">کهکشان راه شیری - ویکی پدیا دانشنامه آزاد</a>
-  
-  <br>
-  
-  ۸ جریان ذرات در مرکز کهکشان — راه شیری کهکشانی 
-  <br>
-  مارپیچی میله‌ای است. شکل کلی کهکشان‌های
-  <br>
-  مارپیچی را می‌توان به یک دیسک یا قرص ت
-  </li>
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="#"></a></li>
-  
-  <li style="display: none; text-align: right;"><a href="https://bing.com">موتور جستجو - bing</a>
-  <br>
-  Bing helps you turn information into <br>action, making it faster and easier to <br> go from searching to doing
-  </li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">ویکاپدیا</a></li>
-  
-  
-  <li style="display: none; text-align: right;"><a href="https://www.digikala.com/search/category-mobile-phone/">خرید گوشی‌ دی جی کالا</a></li>
-  
-  <li style="display: none; text-align: right;"><a href="https://fa.m.wikipedia.org/wiki/%D8%B3%DB%8C%D8%A7%D9%87%E2%80%8C%DA%86%D8%A7%D9%84%D9%87">سیاه چاله - ویکاپدیا دانش نامه آزاد</a>
-  <br>
-  مرز این ناحیه از فضازمان که هیچ چیزی پس از عبور از آن نمی‌تواند به بیرون برگردد را افق رویداد می‌نامند. صفت «سیاه» در نام سیاه‌چاله برگرفته از این واقعیت است که ...
-  </li>
-  
-  <li style="display: none; text-align: left;"><a href="https://www.notebookcheck.net/MIUI-13-official-launch-date-and-time-confirmed-along-with-claims-of-big-app-improvements-over-MIUI-12-5-Enhanced-Edition.588864.0.html">MIUI 13 official launch date and time confirmed along with claims of big</a>
-
-<br>
-Xiaomi has confirmed the launch date 
-<br>
-and time for its latest mobile operating 
-<br>
-system overlay, MIUI 13. As previously 
-<br>
-expected, the skin will
-  </li>
-  
-  
-  
-  <li style="display: none; text-align: left; margin-top:10px;"><a href="http://gizchina.com">
-  MIUI 13 presentation date officially confirmed - Gizchina.com
-  </a>
-  <br>
-   According to the information that has previously surfaced on the net, MIUI 13 will offer customizable notification management, virtual
- 
-  
-  </li>
- 
-  
- 
-  <li style="display: none; text-align: left;"><a href="https://en.miui.com/">MIUI 13</a>
- <br>
-  MIUI is our very own user interface<br> based on Android that is loved by millions <br>worldwide. It is one of the most popular<br> custom ROMs for Android lover due to
-  </li>
-  <br>
-  <li style="display: none; text-align: left;"><a href="https://en.m.wikipedia.org/wiki/MIUI">MIUI 13 - Wikipedia</a>
-  <br>
-  MIUI (pronunciation: Me You I) is 
-  <br>
-  a  modified Android ROM developed by 
-  <br>
-  electronics manufacturer Xiaomi 
-  </li>
-  
-  <li style="display: none; text-align: right;"><a href="https://www.zoomit.ir/os/377265-xiaomi-miui-13-features-changes/">قابلیت های می یوای ۱۳ منتشر شد</a>
-  <br>
- رابط کاربری می یوای شیامی ۱۴۰۰ 
- <br>
- قابلیت نمایش زمان روشن‌ ماندن نمایشگر
- <br>
- سوپر والپیپرها  مستندات و برخی قابلیت‌های دیگر
- </li>
- 
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/bqUYH/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">باب اسفنجی</a>
- <br>
- انیمیشن باب اسفنجی-باب اسفنجی-کارتون باب
- <br>
-اسفنجی با دوبله فارسی
- <br>
-<br>
- </li>
- <li style="display: none; text-align: left;"><a href="https://www.aparat.com/v/bqUYH/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C-%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">Sponge Bob 26</a>
- <br>
-aparat
- <br>
- 
- <br>
- 
- </li>
- 
-
- 
- <li style="display: none; text-align: right;"><a href="https://ipemdad.com/our-services/%D8%AA%D8%B9%D9%85%DB%8C%D8%B1-%DB%8C%D8%AE%DA%86%D8%A7%D9%84/">ipemdad -تعمیرات یخچال</a>
- <br>
-تعمیر یخچال در شرق ، غرب ، شمال و جنوب تهران
- <br>
-توسط خدمات نمایندگی تعمیرات و تعمیرگاه مجاز
- <br>
- یخچال ، فریزر آی.پی امداد در محل عیب یابی و رفع
- <br>
- عیب میگردد
- </li>
- <li style="display: none; text-align: right;"><a href="https://afrazservice.ir/">افراز سرویس</a>
- <br>
- تعمیر یخچال : افراز سرویس مرکز تخصصی تعمیر انواع یخچال فریزر و ساید
- <br>
- بای ساید در تهران در محل شما + 1 سال گارانتی
- <br>
-
- <br>
-
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/EoXdp/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_5_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C">انیمیشن عصر یخبندان 5 دوبله فارسی</a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/mbfNF/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_%DB%B4_%3A_%D8%B1%D8%A7%D9%86%D8%B4_%D9%82%D8%A7%D8%B1%D9%87_%D8%A7%DB%8C_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87">انیمیشن عصر یخبندان ۴ : رانش قاره ای - دوبله فارسی</a>
- 
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/lbC7H/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%AE%D8%A7%D9%86%D9%87_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Home_2015">انیمیشن خانه با دوبله فارسی </a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/lbC7H/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%AE%D8%A7%D9%86%D9%87_%D8%A8%D8%A7_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Home_2015">انیمیشن خانه با دوبله فارسی </a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/R73nk/%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_3_Full_HD_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_-_Ice_Age">عصر یخبندان 3 Full HD دوبله فارسی - Ice Age 3:</a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/u6eYa/%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%862_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Ice_Age%3A_The">انیمیشن عصر یخبندان2 - دوبله فارسی | Ice Age: The Meltdown</a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/fI9GF/%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%B9%D8%B5%D8%B1_%DB%8C%D8%AE%D8%A8%D9%86%D8%AF%D8%A7%D9%86_1_-_%D8%AF%D9%88%D8%A8%D9%84%D9%87_%D9%81%D8%A7%D8%B1%D8%B3%DB%8C_%7C_Ice_Age">کارتون عصر یخبندان 1 - دوبله فارسی | Ice Age</a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: left;"><a href="https://www.instagram.com/">Instagram</a>
- <br>
- 
- Create an account or log in to Instagram - A simple, fun & 
- <br>
- creative way to capture, edit & share photos, videos 
- <br>
- messages with friends & family
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.instagram.com/">اینستاگرام</a>
- <br>
- 
- Create an account or log in to Instagram - A simple, fun & 
- <br>
- creative way to capture, edit & share photos, videos 
- <br>
- messages with friends & family
- <br>
- 
- </li>
- <li style="display: none; text-align: right;"><a href="https://www.aparat.com/v/ZvDmw/26-%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C">انیمیشن باب اسفنجی - کارتون باب اسفنجی - باب اسفنجی جدید با دوبله فارسی</a>
- <br>
- آپارات
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: left;"><a href="https://www.aparat.com/v/ZvDmw/26-%D8%A7%D9%86%DB%8C%D9%85%DB%8C%D8%B4%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%DA%A9%D8%A7%D8%B1%D8%AA%D9%88%D9%86_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C_-_%D8%A8%D8%A7%D8%A8_%D8%A7%D8%B3%D9%81%D9%86%D8%AC%DB%8C">Sponge Bob 59</a>
- <br>
- aparat
- <br>
- 
- <br>
- 
- <br>
- 
- </li>
- <li style="display: none; text-align: left;"><a href="https://divar.ir/">دیوار: بزرگترین سایت نیازمندی های رایگان در ایران</a>
-    <br>
-    دیوار مرجع اصلی نیازمندی های رایگان و خرید و فروش کالای نو و دست دوم. نیازمندی های املاک، خودرو، استخدام، لوازم خانه
-   
-    <br>
-    خدمات و سایر بخش های مورد نظر شما
+  <div style="background:#000; color:#f1f1f1;">
+    <center>
+    <h1>موتور جستجوی همیشه سریع</h1>
     <br>
     
+    </div>
     <br>
-    
-    </li>
-    <li style="display: none; text-align: left;"><a href="https://web.rubika.ir/">Rubika</a>
-        <br>
-        لطفا کشور خود را انتخاب کنید و شماره همراه خود را به صورت کامل وارد کنید. کشور. کد. شماره همراه. بعدی. +98. کد ورود به شما پیامک شده است.
-        <br>
-
-        <br>
-        
-        <br>
-        
-        </li>
-        <li style="display: none; text-align: left;"><a href="https://web.rubika.ir/">روبیکا</a>
-            <br>
-            لطفا کشور خود را انتخاب کنید و شماره همراه خود را به صورت کامل وارد کنید. کشور. کد. شماره همراه. بعدی. +98. کد ورود به شما پیامک شده است.
-            <br>
-    
-            <br>
-            
-            <br>
-            
-            </li>
-            <li style="display: none; text-align: left;"><a href="https://fa-ir.facebook.com">فیس‌بوک - ورود به سیستم یا نام‌نویسی</a>
-                <br>
-                یک حساب ایجاد کنید یا به سیستم فیس‌بوک وارد شوید. به دوستان، خانواده‌تان وسایر افرادی که می‌شناسید متصل شوید. عکس‌ و ویدیو 
-                <br>
-                به اشتراک بگذارید، پیام ارسال
-                <br>
-                
-                <br>
-                
-                </li>
-                <li style="display: none; text-align: left;"><a href="https://nobelcold.github.io/">تعمیرات یخچال در اندیمشک</a>
-                  <br>
-                 تعمیرات یخچال در اندیمشک 
-                  <br>
-                بهترین تعمیر کننده های اندیمشک
-                  <br>
-                  
-                  <br>
-                  
-                  </li>
-                  <li style="display: none; text-align: left;"><a href="https://nobelcold.github.io/">تعمیرات یخچال در اندیمشک کوه لور</a>
-                    <br>
-                   تعمیرات یخچال در اندیمشک 
-                    <br>
-                  بهترین تعمیر کننده های اندیمشک
-                    <br>
-                    
-                    <br>
-                    
-                    </li>
-                    <li style="display: none; text-align: left;"><a href="https://getbootstrap.com/">getbootstrap</a>
-                   
-                   
-                      <br>
-                      The world's most popular mobile-first and responsive front-end ...
-                      <br>
-                      Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive
-                      <br>
-                      mobile first projects on the web. Download Bootstrap. Currently v3.3.7
-                      <br>
-                      
-                      </li>
-
-
-  <li style="display: none; text-align: left;"><a href=""></a>
-                   
-                   
-                      <br>
-                      
-                      <br>
-                    
-                      <br>
-                  
-                      <br>
-                      
-                      </li>
-
-  <li style="display: none; text-align: left;"><a href="https://getbootstrap.com/"></a>
-                   
-                   
-                      <br>
-                      
-                      <br>
-                    
-                      <br>
-                  
-                      <br>
-                      
-                      </li>
-
-
-  <li style="display: none; text-align: left;"><a href="https://getbootstrap.com/"></a>
-                   
-                   
-                      <br>
-                      
-                      <br>
-                    
-                      <br>
-                  
-                      <br>
-                      
-                      </li>
-</ul>
-
-
-</div>
-
-
-
-  
-<div class="topnav" id="myTopnav" style=" box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; font-family: 'Josefin Sans', sans-serif;
- position: fixed;
-width: 100%;
-bottom: 0;
-left: 0;
-margin: 0;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-
-max-width: none;
-background-color: #f1f1f1;
-padding: 10px 0;
-padding-top: 10px;
-padding-right: 0px;
-padding-bottom: 10px;
-padding-left: 0px;
-z-index: 1;">
- 
-  <a href="http://mozask.github.io" class="active">
-    <img style="witdth:200px; height:50px;" src="https://user-images.githubusercontent.com/96551676/165115003-2aeee126-d370-4fc3-b1be-77b9138f2f1a.jpg">
-  </a>
-  <a style="" onclick="alert(`یک بروزرسانی موجود است`)">mlc : .  5 . 1 . 1</a>
-  <a href="signup.html">sign up</a>
- 
-  <a onclick="alert(' 2022/7/1')" class="settings" href="#">settings
-
-
-  </a>
-<a href="http://mozask.github.io/support">support</a>
-
-<a href="https://mozask.github.io/pages/">pages</a>
-
-<a href="http://mozask.github.io/status/">status</a>
-<center>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  
-
-
-   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-  <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-</svg>
-
-  </a>
-</center>
-</div>
-</div>
-
-<center>
-<div id="information" style="box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; width:90%; background:#f1f1f1; 
-position: fixed;
-width: 100%;
-bottom: 0;
-left: 0;
-margin: 0;
-  margin-top: -50px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-
-max-width: none;
-background-color: #f1f1f1;
-padding: 10px 0;
-padding-top: 10px;
-padding-right: 0px;
-padding-bottom: 10px;
-padding-left: 0px;
-z-index: 1;
-
-">
-
-
-در حال بروزرسانی 
+    <center>
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalToggleLabel">1</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+    در روزی که سیستم باز بود شما وارد می شوید
 <br>
-<button style="border: 1px solid #000;" onclick="document.getElementById(`information`).style.display = `none`;">
-تایید
-
-</button>
-
-</div>
-</center>
-
-<script src="index.js"></script>
-<script src="app.js"></script>
-<script>
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function settings() {
-  document.getElementById("settings").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-} 
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-</body>
+عدد ۱ را وارد می کنید و اسم صفحه و ایمیل
+<br>
+را می نویسید بعد مخزن بعده ۱ یا دو ساعت ساخت می شود
+    </div>
+    <div class="modal-footer">
+    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">بعدی</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalToggleLabel2">2</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+   مخزن اگر ایمن بود در موتور جستجو قرار می گیرد
+    </div>
+    <div class="modal-footer">
+    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">برگشت</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">ساخت صفحه</a>
+    </center>
+    </center>
+    <center>
+    <br>
+    <h2>امنیت برای ما بسیار مهم است</h2>
+    </center>
+    <br>
+    <center>
+    <form action="https://mozask.github.io/search/">
+     <button type="button" class="btn btn-outline-success">سرچ کنید</button>
+     </form>
+     </center>
+     <br>
+     <center>
+     <h6>
+     امنیت موتور جستجو برای ما بسیار مهم است
+     
+     <br>
+     ما درست شدیم که سرچ کردن شما را امن کنیم
+     
+     </h6>
+     
+     
+     </center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
