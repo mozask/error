@@ -75,7 +75,7 @@
   
   }
   a:focus {
-    border-bottom: 1px solid;
+   
     
    
   }
@@ -84,7 +84,7 @@
   list-style-image: url('');
   }
   a:focus {
-    border-bottom: 1px solid #000;
+    
    
   }
  
